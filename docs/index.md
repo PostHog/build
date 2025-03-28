@@ -11,18 +11,18 @@
   - [Visual Studio Marketplace](#visual-studio-marketplace)
   - [Proprietary Debugging Tools](#proprietary-debugging-tools)
   - [Proprietary Extensions](#proprietary-extensions)
-- [Extensions compatibility](https://github.com/VSCodium/vscodium/blob/master/docs/extensions-compatibility.md)
+- [Extensions compatibility](https://github.com/PostHog/editor/blob/master/docs/extensions-compatibility.md)
 - [Migrating from Visual Studio Code to VSCodium](#migrating)
 - [Sign in with GitHub](#signin-github)
-- [Accounts authentication](https://github.com/VSCodium/vscodium/blob/master/docs/accounts-authentication.md)
+- [Accounts authentication](https://github.com/PostHog/editor/blob/master/docs/accounts-authentication.md)
 - [How do I run VSCodium in portable mode?](#portable)
 - [How do I fix the default file manager?](#file-manager)
 - [How do I press and hold a key and have it repeat in VSCodium?](#press-and-hold)
 - [How do I open VSCodium from the terminal?](#terminal-support)
   - [From Linux .tar.gz](#from-linux-targz)
-- [Troubleshooting](https://github.com/VSCodium/vscodium/blob/master/docs/troubleshooting.md)
-- [Contributing](https://github.com/VSCodium/vscodium/blob/master/CONTRIBUTING.md)
-- [How to build VSCodium](https://github.com/VSCodium/vscodium/blob/master/docs/howto-build.md)
+- [Troubleshooting](https://github.com/PostHog/editor/blob/master/docs/troubleshooting.md)
+- [Contributing](https://github.com/PostHog/editor/blob/master/CONTRIBUTING.md)
+- [How to build VSCodium](https://github.com/PostHog/editor/blob/master/docs/howto-build.md)
 
 ## <a id="disable-telemetry"></a>Getting all the Telemetry Out
 
@@ -44,9 +44,9 @@ __Please note that some extensions send telemetry data to Microsoft as well. We 
 
 ### <a id="replacement-online-services"></a>Replacements to Microsoft Online Services
 
-When searching the `@tag:usesOnlineServices` filter, note that while the "Update: Mode" setting description still says "The updates are fetched from a Microsoft online service", VSCodium's build script [sets the `updateUrl` field](https://github.com/VSCodium/vscodium/blob/master/prepare_vscode.sh#L36) in `product.json` to that of VSCodium's own small [update server](https://github.com/VSCodium/update-api), so enabling that setting won't actually result in any calls to Microsoft servers.
+When searching the `@tag:usesOnlineServices` filter, note that while the "Update: Mode" setting description still says "The updates are fetched from a Microsoft online service", VSCodium's build script [sets the `updateUrl` field](https://github.com/PostHog/editor/blob/master/prepare_vscode.sh#L36) in `product.json` to that of VSCodium's own small [update server](https://github.com/VSCodium/update-api), so enabling that setting won't actually result in any calls to Microsoft servers.
 
-Likewise, while the descriptions for "Extensions: Auto Check Updates" and "Extensions: Auto Update" include the same phrase, VSCodium [replaces](https://github.com/VSCodium/vscodium/blob/master/prepare_vscode.sh#L42) the Visual Studio Marketplace with Open VSX, so these settings won't call Microsoft, either.
+Likewise, while the descriptions for "Extensions: Auto Check Updates" and "Extensions: Auto Update" include the same phrase, VSCodium [replaces](https://github.com/PostHog/editor/blob/master/prepare_vscode.sh#L42) the Visual Studio Marketplace with Open VSX, so these settings won't call Microsoft, either.
 
 ## <a id="extensions-marketplace"></a>Extensions + Marketplace
 

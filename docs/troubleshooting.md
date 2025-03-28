@@ -10,7 +10,7 @@
   - [Remote SSH doesn't work](#linux-remote-ssh)
 - [macOS](#macos)
   - [App can't be opened because Apple cannot check it for malicious software](#macos-unidentified-developer)
-  - ["VSCodium.app" is damaged and can’t be opened. You should move it to the Bin](#macos-quarantine)
+  - ["PostHog Editor.app" is damaged and can’t be opened. You should move it to the Bin](#macos-quarantine)
 
 
 ## <a id="linux"></a>Linux
@@ -27,10 +27,10 @@ fc-cache -r
 
 #### <a id="linux-rendering-glitches"></a>*Text and/or the entire interface not appearing*
 
-You have likely encountered [a bug in Chromium and Electron](microsoft/vscode#190437) when compiling Mesa shaders, which has affected all Visual Studio Code and VSCodium versions for Linux distributions since 1.82.  The current workaround (see microsoft/vscode#190437) is to delete the GPU cache as follows:
+You have likely encountered [a bug in Chromium and Electron](microsoft/vscode#190437) when compiling Mesa shaders, which has affected all Visual Studio Code and PostHog Editor versions for Linux distributions since 1.82.  The current workaround (see microsoft/vscode#190437) is to delete the GPU cache as follows:
 
 ```bash
-rm -rf ~/.config/VSCodium/GPUCache
+rm -rf ~/.config/PostHog Editor/GPUCache
 ```
 
 #### <a id="linux-kde-global-menu"></a>*Global menu workaround for KDE*
@@ -67,7 +67,7 @@ Credits: [Gerson](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/issues/
 
 ##### <a id="linux-remote-ssh"></a>*Remote SSH doesn't work*
 
-Use the VSCodium's compatible extension [Open Remote - SSH](https://open-vsx.org/extension/jeanp413/open-remote-ssh).
+Use the PostHog Editor's compatible extension [Open Remote - SSH](https://open-vsx.org/extension/jeanp413/open-remote-ssh).
 
 On the server, in the `sshd` config, `AllowTcpForwarding` need to be set to `yes`.
 
@@ -81,10 +81,10 @@ Since the App is signed with a self-signed certificate, on the first launch, you
 
 You can right-click the App and choose `Open`.
 
-#### <a id="macos-quarantine"></a>*"VSCodium.app" is damaged and can’t be opened. You should move it to the Bin.*
+#### <a id="macos-quarantine"></a>*"PostHog Editor.app" is damaged and can’t be opened. You should move it to the Bin.*
 
 The following command will remove the quarantine attribute.
 
 ```
-xattr -r -d com.apple.quarantine /Applications/VSCodium.app
+xattr -r -d com.apple.quarantine /Applications/PostHog Editor.app
 ```
