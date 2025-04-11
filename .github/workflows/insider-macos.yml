@@ -46,7 +46,7 @@ jobs:
         include:
           - runner: macos-13
             vscode_arch: x64
-          - runner: [self-hosted, macOS, ARM64]
+          - runner: depot-macos-14
             vscode_arch: arm64
 
     steps:
