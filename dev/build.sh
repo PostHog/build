@@ -147,7 +147,7 @@ if [[ "${SKIP_ASSETS}" == "no" ]]; then
   fi
 
   if [[ "${OS_NAME}" == "osx" && -f "dev/osx/codesign.env" ]]; then
-    . dev/osx/macos-codesign.env
+    . dev/osx/codesign.env
 
     echo "CERTIFICATE_OSX_ID: ${CERTIFICATE_OSX_ID}"
   fi
