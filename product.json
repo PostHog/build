@@ -539,8 +539,8 @@
   "builtInExtensions": [
     {
       "name": "PostHog",
-      "version": "1.0.1",
-      "sha256": "61a7328284326a91f76f001764c9101f9eadfec4bca1a32819a653faa23582b4",
+      "version": "1.0.2",
+      "sha256": "ea69360b8705ea5dc2e1599dee349eab1bf2756917f5f4cb456771e48f6766f9",
       "repo": "https://github.com/PostHog/posthog-extension",
       "metadata": {
         "id": "00000000-0000-0000-0000-000000000000",
